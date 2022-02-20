@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monthly Challenges</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>FIRST LINE OF SENTENCE</h1>
     <h2>Second line of the sentence</h2>
+    {% if text is not None %}
     <h3>{{text |title}}</h3>
+    {% else %}
+    <p>There is No challege for this Month</p>
+    {% endif %}
     <h4>{{month_name}}</h4>
-    
-</body>
+  </body>
 </html>
